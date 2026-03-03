@@ -1,44 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>IGBT Model Viewer</title>
-
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <style>
-    body {
-      margin: 0;
-      background: transparent;
-    }
-
-    model-viewer {
-      width: 100%;
-      height: 100vh;
-      cursor: grab;
-    }
-
-    model-viewer:active {
-      cursor: grabbing;
-    }
-  </style>
-</head>
-
-<body>
-
-  <model-viewer
-    src="igbt-1.glb"
-    camera-controls
-    enable-pan
-    interaction-prompt="auto"
-    shadow-intensity="1"
-    exposure="1"
-    camera-orbit="auto auto 150%"
-    min-camera-orbit="auto auto 50%"
-    max-camera-orbit="auto auto 300%"
-    min-field-of-view="10deg"
-    max-field-of-view="45deg">
-  </model-viewer>
-
-</body>
-</html>
+<model-viewer
+  src="igbt-1.glb"
+  camera-controls
+  disable-zoom
+  disable-pan
+  auto-rotate
+  auto-rotate-delay="1000"
+  rotation-per-second="20deg"
+  interaction-prompt="none"
+  shadow-intensity="1"
+  exposure="1"
+  camera-orbit="0deg 75deg 150%">
+</model-viewer>
